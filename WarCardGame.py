@@ -11,6 +11,7 @@ class Card:
         print("Initiation for: {:5}, power: {:2}, quantity {:2}".format(
             self.name, self.power, self.quantity,))
 
+
 """     @staticmethod
     def shuffle(cardList):
         random.shuffle(cardList) """
@@ -21,8 +22,6 @@ class Player:
         self.name = name
         self.pickedCard = None
         self.selectedCards = []
-        # self.playerAmountCards = None
-        # self.requiredNumberOfCards = None  # Unused variable
         self.selectedCards = []  # List with player's cards
         print("Initiation for: {:5}".format(self.name))
 
@@ -62,13 +61,9 @@ cardList = [
 playersList = [
     Player("Pablo"),
     Player("Ela"),
-    # Player("Klara"),
-    # Player("Pabasdlo"),
-    # Player("Elaasf"),
 ]
 
 
 immutableNumberOfCards = 0
 for card in range(len(cardList)):
     immutableNumberOfCards += cardList[card].quantity
-
